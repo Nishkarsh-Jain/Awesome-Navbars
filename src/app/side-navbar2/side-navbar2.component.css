@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   background: var(--body-color);
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 /* === Sidebar === */
@@ -22,6 +22,7 @@ body {
   padding: 10px 14px;
   background: var(--sidebar-color);
   transition: all 0.5s ease;
+  z-index: 100;
 }
 .sidebar.toggleSidebar {
   width: 88px;
@@ -39,10 +40,11 @@ body {
   white-space: nowrap;
   opacity: 1;
 }
-.sidebar image {
+.sidebar .image {
   min-width: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .sidebar li {
   height: 50px;
@@ -108,10 +110,16 @@ body {
 .sidebar.toggleSidebar header .toggleBtn {
   transform: translateY(-50%);
 }
-
+body.dark .sidebar header .toggleBtn {
+  column-rule: var(--text-color);
+}
+.sidebar .menu {
+  margin-top: 20px;
+}
 .sidebar .search_box {
   background: var(--primary-color-light);
   border-radius: 6px;
+  transition: all 0.5 ease;
 }
 .search_box input {
   height: 100%;
@@ -121,6 +129,8 @@ body {
   border: none;
   border-radius: 6px;
   color: var(--search-color);
+  font-size: 16px;
+  font-weight: 500;
 }
 .sidebar .search_box .icon {
   cursor: pointer;
@@ -164,6 +174,7 @@ body.dark .sidebar li a:hover .text {
 }
 .menu_bar .mode i {
   position: absolute;
+  transition: all 0.3s ease;
 }
 .menu_bar .mode i.sun {
   opacity: 0;
@@ -195,6 +206,7 @@ body.dark .mode {
   width: 44px;
   border-radius: 25px;
   background: var(--toggle-color);
+  transition: all 0.5s ease;
 }
 .switch::before {
   content: '';
@@ -210,4 +222,22 @@ body.dark .mode {
 }
 body.dark .switch::before {
   left: 24px;
+}
+.home {
+  position: relative;
+  left: 250px;
+  height: 100vh;
+  width: calc(100%-250px);
+  background: var(--body-color);
+  transition: all 0.5s ease;
+}
+.home .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 8px 40px;
+}
+.sidebar.toggleSidebar ~ .home {
+  left: 88px;
+  width: calc(100%-88px);
 }

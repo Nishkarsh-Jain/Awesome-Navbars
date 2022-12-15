@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SideNavbar2Component implements OnInit {
   bColor: boolean = false;
   toggleSidebar: boolean = false;
+
   mode: string = 'Dark Mode';
   modeStatus: boolean = false;
   constructor() {}
