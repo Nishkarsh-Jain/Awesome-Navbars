@@ -108,10 +108,7 @@ body {
 .sidebar.toggleSidebar header .toggleBtn {
   transform: translateY(-50%);
 }
-body.dark .sidebar header .toggleBtn {
-  transform: rotate(180deg);
-  color: var(--text-color);
-}
+
 .sidebar .search_box {
   background: var(--primary-color-light);
   border-radius: 6px;
@@ -171,6 +168,12 @@ body.dark .sidebar li a:hover .text {
 .menu_bar .mode i.sun {
   opacity: 0;
 }
+body.dark .menu_bar .mode i.sun {
+  opacity: 1;
+}
+body.dark .menu_bar .mode i.moon {
+  opacity: 0;
+}
 .menu_bar .mode .toggle_switch {
   position: absolute;
   right: 0;
@@ -183,8 +186,8 @@ body.dark .sidebar li a:hover .text {
   cursor: pointer;
   background: var(--primary-color-light);
 }
-body.dark .mode_text {
-  background: var(--primary-color-light);
+body.dark .mode {
+  color: white;
 }
 .toggle_switch .switch {
   position: relative;

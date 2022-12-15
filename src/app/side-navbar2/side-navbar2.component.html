@@ -68,10 +68,17 @@
         </li>
         <li class="mode">
           <div class="moon_sun">
-            <i class="bx bx-moon icon moon"></i>
-            <i class="bx bx-sun icon sun"></i>
+            <i *ngIf="modeStatus; else darkIcon" class="bx bx-sun icon sun"></i>
+            <ng-template #darkIcon
+              ><i class="bx bx-moon icon moon"></i
+            ></ng-template>
           </div>
-          <span class="mode_text nav_text">{{ mode }}</span>
+          <span *ngIf="modeStatus; else darkBlock" class="mode_text nav_text"
+            >light mode</span
+          >
+          <ng-template #darkBlock>
+            <span class="mode_text nav_text">dark mode</span>
+          </ng-template>
           <div class="toggle_switch" (click)="onModeSwitch()">
             <span class="switch"></span>
           </div>

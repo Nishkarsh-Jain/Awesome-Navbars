@@ -20,10 +20,6 @@ export class SideNavbar2Component implements OnInit {
 
   onModeSwitch() {
     this.bColor = !this.bColor;
-    if (this.bColor) {
-      this.mode = 'Light Mode';
-    } else {
-      this.mode = 'Dark Mode';
-    }
+    this.modeStatus = this.bColor ? true : false;
   }
 }

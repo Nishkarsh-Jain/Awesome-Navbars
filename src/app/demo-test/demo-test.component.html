@@ -1,0 +1,9 @@
+<button class="btn btn-info" (click)="onClick()">Click</button>
+<span *ngIf="value">Hello</span>
+<br />
+<br />
+
+<span *ngIf="value; else darkBlock" class="mode_text nav_text">light mode</span>
+<ng-template #darkBlock>
+  <span class="mode_text nav_text">dark mode</span>
+</ng-template>
