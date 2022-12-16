@@ -1,7 +1,7 @@
 /* Add application styles & imports to this file! */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-/*  === For Side- Navbar2 Component === */
+/*  === For Side- Navbar2 Component === 
 :root {
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
@@ -21,3 +21,4 @@ body.dark{
   --text-color: #CCC;
   --search-color:#fff;
 }
+*/
