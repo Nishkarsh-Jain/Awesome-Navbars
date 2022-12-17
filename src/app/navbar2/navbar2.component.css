@@ -9,7 +9,7 @@
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(83, 55, 28, 0.6)),
-    url(https://cdn.jsdelivr.net/gh/Nishkarsh-Jain/Awesome-Navbars@main/src/app/flexbox-navbar/image/Background.jpg);
+    url(https://cdn.jsdelivr.net/gh/Nishkarsh-Jain/Awesome-Navbars@main/src/app/navbar2/image/Background.jpg);
   background-size: cover;
   background-position: center;
 }
