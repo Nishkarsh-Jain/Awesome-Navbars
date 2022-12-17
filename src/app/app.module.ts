@@ -10,6 +10,7 @@ import { SideNavbar2Component } from './side-navbar2/side-navbar2.component';
 import { DemoTestComponent } from './demo-test/demo-test.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { Navbar3Component } from './navbar3/navbar3.component';
+import { MagicNavbarComponent } from './magic-navbar/magic-navbar.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -21,6 +22,7 @@ import { Navbar3Component } from './navbar3/navbar3.component';
     Navbar2Component,
     Navbar3Component,
     DemoTestComponent,
+    MagicNavbarComponent
   ],
   bootstrap: [AppComponent],
 })
