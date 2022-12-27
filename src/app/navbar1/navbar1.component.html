@@ -1,38 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="nav_container">
-        <div class="nav_header">
-            <i class="bx bxl-angular"></i>
-          <button
-            class="fa fa-bars"
-            (click)="onClick()"
-            aria-hidden="true"
-          ></button>
-        </div>
-        <ul class="nav_menu" [class.show_menu]="value">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </body>
-</html>
+<nav>
+  <div class="nav_container">
+    <div class="nav_header">
+      <i class="bx bxl-angular"></i>
+      <button
+        class="fa fa-bars"
+        (click)="onClick()"
+        aria-hidden="true"
+      ></button>
+    </div>
+    <ul class="nav_menu" [class.show_menu]="value">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
